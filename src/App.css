@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: max-content;
+  letter-spacing: 1px;
+}
+
+:root {
+  --primary-green: #00c4bb;
+}
+

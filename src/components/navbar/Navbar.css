@@ -1,0 +1,172 @@
+.navbar-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-wrapper {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar-log {
+  flex-basis: 15%;
+  height: 100%;
+}
+.navbar-log img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  flex-basis: 80%;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  text-transform: capitalize;
+  justify-content: flex-end;
+  height: 100%;
+}
+.nav-link {
+  margin-right: 20px;
+}
+.agency {
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: solid 2px var(--primary-green);
+  display: flex;
+  align-items: center;
+}
+.hiring {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: solid 2px black;
+  font-weight: bold;
+}
+.lang-select-btn
+{
+    width: 5%;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+  
+    justify-content: center;
+}
+.lang-select-btn:hover{
+    cursor: pointer;
+}
+.lang-select-div
+{
+    display: none;
+    height: 100px;
+    min-width: max-content;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top :60px;
+    bottom: -100%;
+    left: -100%;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+}
+.lang-select-div ul
+{
+
+list-style: none;
+margin: 0;
+padding: 0;
+height: 100%;
+display: flex;
+flex-direction: column  ;
+}
+
+.lang-select-div li
+{
+    width: 100%;
+    flex-basis: 50%;
+    font-size: 16px;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.lang-select-div li:hover
+{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+}
+.active
+{
+    display: flex;
+}
+
+.fa-angle-down
+{
+    color: rgba(0,0,0,0.5);
+    margin-left: 5px;
+    align-self: flex-end;
+}
+#nav-link-login
+{
+    padding-right: 10px;
+    border-right: solid 2px #ccc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+.nav-links:first-child
+{
+    border-left: solid 2px black;
+}
+.fa-bars
+{
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    
+    .navbar-wrapper
+    {
+        width: 100%;
+    }
+
+    .fa-bars
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .nav-links
+    {
+        display: none;
+    }
+    .nav-links-mobile
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:100%;
+    }
+    .agency
+    {
+        color: black;
+        border: 0;
+        font-weight: normal;
+    }
+    .hiring
+    {
+        font-weight: normal;
+        border: 0;
+    }
+}
